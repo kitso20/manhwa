@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>manhwa</title>
+    <style>
+      body {
+        background: linear-gradient(to top, white, pink);
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        line-height: 1.5;
+      }
+      div {
+        max-width: 600px;
+        background-color: wheat;
+        display: block;
+        margin: 0 auto;
+        border-radius: 15px;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(124, 81, 124);
+      }
+      .link {
+        color: black;
+      }
+      .anime {
+        max-width: 95%;
+        border-radius: 25px;
+        transition: all 350ms ease-in-out;
+        display: block;
+        margin: 0 auto;
+      }
+      .anime:hover {
+        cursor: pointer;
+        transform: scale(0.99);
+      }
+      .Recommendations {
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        padding: 9px 12px;
+        border-radius: 15px;
+        background-color: rgba(226, 131, 183, 0.712);
+      }
+      .theme {
+        display: block;
+        margin: 0 auto;
+        padding: 9px 12px;
+        border: 1px solid black;
+        border-radius: 10px;
+        color: wheat;
+        font-size: 20px;
+        background-color: black;
+        transition: all 180ms ease-in-out;
+      }
+      .theme:hover {
+        cursor: pointer;
+        background-color: rgba(128, 128, 128, 0.685);
+      }
+      .photo {
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+      }
+      .photo img {
+        max-width: 100%;
+        border-radius: 20px;
+        transition: all 180ms ease-in-out;
+      }
+      .dark {
+        background: linear-gradient(
+          109.6deg,
+          rgb(43, 1, 91) 13.4%,
+          rgb(122, 2, 54) 100.2%
+        );
+      }
+
+      .dark div {
+        background-color: rgb(145, 122, 141);
+      }
+      .dark .theme {
+        background-color: rgb(153, 140, 118);
+        color: rgb(43, 42, 42);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme">Dark Theme</button>
+    <div>
+      <h1>What is Manhwa📚</h1>
+      <h2>My favorite Hobby</h2>
+      <a
+        href="https://villains-are-destined-to-die.fandom.com/wiki/Villains_Are_Destined_to_Die_Wiki"
+        target="_blank"
+        ><img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/035/original/91ZW7bYkgRL._AC_UF1000_1000_QL80_.jpg?1726599935"
+          alt=""
+          class="anime"
+        />
+      </a>
+      <div class="photo">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/058/original/ytdyyrwvtwya1.jpg?1726612862"
+          alt=""
+          class="one"
+        /><img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/057/original/91zAqheC8HL._AC_UF1000_1000_QL80_.jpg?1726612846"
+          alt=""
+          class="final"
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/050/original/gimme-that-pacifier-1.jpg?1726612459"
+          alt=""
+          class="two"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/053/original/91OGBsB9e0L._AC_UF1000_1000_QL80_.jpg?1726612626"
+          alt=""
+          class="three"
+        />
+      </div>
+      <p>
+        <strong>Manhwa</strong>
+        <em>(Korean: 만화; Hanja: 漫畵; Korean pronunciation: [manβʷa])</em> is
+        the general Korean term for comics and print cartoons. Outside Korea,
+        the term usually refers to Korean comics. Manhwa is directly influenced
+        by Japanese Manga comics. Modern Manhwa has extended its reach to many
+        other countries. These comics have branched outside of Korea by access
+        to Webtoons and have created an impact that has resulted in some movie,
+        drama and television show adaptations.
+      </p>
+      <p>
+        📖Learn more on
+        <a href="https://en.wikipedia.org/wiki/Main_Page">wikipedia</a>
+      </p>
+      <button class="Recommendations">
+        <a
+          href="https://www.google.com/search?sca_esv=6d171d08af1b8f7f&sca_upv=1&q=Manhwa+recommendation&sa=X&ved=2ahUKEwiRxvepwc2IAxVW_rsIHYe6L-IQ1QJ6BAhaEAE&biw=1366&bih=641&dpr=1"
+          target="_blank"
+          class="link"
+          >Some Recommendations</a
+        >
+      </button>
+    </div>
+    <p class="footer">Coded with 💙 by Motlashuping Kitso</p>
+    <script>
+      function change() {
+        let body = document.querySelector("body");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+      let Dark = document.querySelector(".theme");
+      Dark.addEventListener("click", change);
+    </script>
+  </body>
+</html>
